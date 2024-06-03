@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./main.css" />
+        <script src="./main.js" defer></script>
+        <title>Annoying Newsletters</title>
+    </head>
+    <body>
+        <main>
+            <h2>Would you like our newsletter?*</h2>
+            <p>Get our unsolicited marketing garbage straight to your inbox.</p>
+            <p class="small">
+                *Unfortunately, due to technical problems, the "no" button has
+                been deactivated.
+            </p>
+            <button onclick="displayNewsletterPopup()">Yes!</button>
+            <button id="no">No</button>
+        </main>
+        <dialog id="newsletter">
+            <h2>Great!</h2>
+            <p>We'll just need your email address.*</p>
+            <input type="text" placeholder="Email" />
+            <button onclick="displayDonePopup()">Submit</button>
+            <h4>Your privacy matters</h4>
+            <p>
+                We never sell your information** and<br />always keep it
+                encrypted***.
+            </p>
+            <p class="small">
+                *and your name, date of birth,<br />address, credit card number,
+                eye color, hair color,<br />
+                meaning of life, purpose of the universe, etc...<br />
+            </p>
+            <p class="small">**We only do it when we need to</p>
+            <p class="small">
+                ***Unfortunately, encryption is expensive<br />and we don't have
+                money, so...
+            </p>
+        </dialog>
+        <dialog id="done">
+            <h2>Thanks!</h2>
+            <p>We now have your name, date of birth,<br />etc...</p>
+            <p>Please be prepared for the following emails:</p>
+            <ul>
+                <li>Advertisements for useless items</li>
+                <li>New ways to waste your money</li>
+                <li>Defective products we need to have go</li>
+                <li>
+                    For other types of emails,<br />please visit our website.
+                </li>
+            </ul>
+        </dialog>
+    </body>
+</html>
